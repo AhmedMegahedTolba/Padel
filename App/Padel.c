@@ -28,6 +28,7 @@ u8  customChar[8] = {
 
 u8 flag_direction=1;
 s8 ch_1=0,ch_2=0;
+u8 end_padel_flag;
 
 u8 score1=0;
 u8 score2=0;
@@ -47,6 +48,18 @@ void Padel_Init(void)
 
 void Padel_Runnable(void)
 {
+	if (score1==5 || score2==5)
+	{
+		if (score1==5)
+		{
+			end_padel_flag=1
+		}
+		if(score2==5)
+		{
+			end_padel_flag=2;
+			
+		}
+	}
 	LCD_GoTo(ch_2,19);
 	LCD_WriteChar(1);
 	LCD_GoTo(ch_1,0);

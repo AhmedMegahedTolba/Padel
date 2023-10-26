@@ -130,12 +130,6 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App\Calc.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="App\Calc.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="App\Padel.c">
       <SubType>compile</SubType>
     </Compile>
